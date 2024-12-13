@@ -1,0 +1,12 @@
+
+<IfModule mod_dir.c>
+    DirectoryIndex index.php
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteBase /local/app/install/
+
+    RewriteRule ^(.*)$ $1 [L]
+
+</IfModule>
